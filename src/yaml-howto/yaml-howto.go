@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"yaml-howto/mylib"
 )
 
 type Config struct {
@@ -24,10 +25,12 @@ func main() {
 	reader, _ := os.Open("data/data.yaml")
 	buf, _ := ioutil.ReadAll(reader)
 
+	log.Printf("%v\n", mylib.A())
 	var conf Config
 	yaml.Unmarshal(buf, &conf)
 
 	log.Printf("%v\n", validateConfig(&conf))
 
 	log.Printf("%v\n", conf)
+
 }
