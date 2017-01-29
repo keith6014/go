@@ -4,7 +4,7 @@ import (
 	"log"
 )
 
-func A() bool {
+func AAA() bool {
 	return true
 }
 
@@ -15,7 +15,8 @@ type Config struct {
 func ValidateConfig(myconfig *Config) bool {
 
 	if len(myconfig.Info) == 0 {
-		log.Fatal("info is not set")
+		log.Print("info is not set")
+		return false
 	}
 
 	return true
