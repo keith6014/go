@@ -1,0 +1,14 @@
+Info:  "blue"
+
+data:
+  source: http://intra
+  destination:  /tmp 
+
+run:
+  -  id:  A1
+     exe:  "run.a1"
+     output:  "output.A1"
+  
+  -  id:  A2
+     exe:  "run.a2"
+     output:  "output.A2"
