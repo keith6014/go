@@ -3,7 +3,8 @@ DROP TABLE author;
 
 create table xmltest(
   id serial,
-  data xml NOT null
+  data xml NOT null,
+  ts timestamp without time zone default (now() at time zone 'utc')
 );
 
 create table author (
