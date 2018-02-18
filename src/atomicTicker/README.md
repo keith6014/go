@@ -1,0 +1,1 @@
+Periodically poll using atomic
