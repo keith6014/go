@@ -1,0 +1,20 @@
+---
+info:
+  version: 0.0.0
+  description: something
+  title: Sample API
+paths:
+  /ping:
+    get:
+      responses:
+        '200':
+          description: a description
+  /pong:
+    post:
+      responses:
+        '202':
+          description: a post descriptiomn
+servers:
+  - url: 'http://localhost'
+    description: localhost description
+openapi: 3.0.0
